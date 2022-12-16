@@ -35,9 +35,9 @@ let squareFace = Math.floor(min / 2);
 
 const totalPathLength = canvas.width + squareFace * 3 + squareFace * 2;
 
-const intervalDuration = 5;
-const step = totalPathLength / (1 / intervalDuration) / time / 1000;
-alert(step)
+const intervalDuration = 50;
+const step = 50;
+
 //fix collision
 if (squareFace % 2 == 1) squareFace--;
 
