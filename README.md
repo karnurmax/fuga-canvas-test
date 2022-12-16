@@ -1,0 +1,1 @@
+# fuga canvas test task

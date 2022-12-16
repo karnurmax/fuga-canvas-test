@@ -29,14 +29,15 @@ const ctx = canvas.getContext("2d");
 canvas.width = document.body.clientWidth;
 canvas.height = document.body.clientHeight;
 
-let squareLineWidth = 1, step = 50;
+const squareLineWidth = 1;
 const min = Math.min(canvas.width, canvas.height);
 let squareFace = Math.floor(min / 2);
 
 const totalPathLength = canvas.width + squareFace * 3 + squareFace * 2;
 
-const intervalDuration = 1000 / ((totalPathLength / step)) * 3;
-
+const intervalDuration = 5;
+const step = totalPathLength / (1 / intervalDuration) / time / 1000;
+alert(step)
 //fix collision
 if (squareFace % 2 == 1) squareFace--;
 
