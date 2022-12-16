@@ -33,10 +33,10 @@ const squareLineWidth = 1;
 const min = Math.min(canvas.width, canvas.height);
 let squareFace = Math.floor(min / 2);
 
-const totalPathLength = canvas.width + squareFace * 3 + squareFace * 2;
+const totalPathLength = canvas.width + squareFace * 4 + line_length * 2;
 
-const intervalDuration = 50;
-const step = 50;
+const intervalDuration = 4;
+const step = totalPathLength / (1000 / intervalDuration) / time;
 
 //fix collision
 if (squareFace % 2 == 1) squareFace--;
